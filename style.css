@@ -13,7 +13,7 @@ body {
   flex-flow: column;
 
   max-width: 100%;
-  min-width: 400px;
+  min-width: 200px;
 
   padding-left: 7%;
   padding-right: 7%;
@@ -24,24 +24,55 @@ body {
 
 h1  {
   color: black;
-  font-size: 33pt;
+  font-size: 39pt;
+  text-align: center;
+}
+
+h2 {
+  font-size: 27pt;
+  text-align: center;
 }
 
 .chap {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 
-}
-
-.chapter  {
+  flex-flow: row;
   padding: 7px;
   text-align: center;
   width: 100%;
   border-radius: 33px;
   border: 2px solid whitesmoke;
   background-color: whitesmoke;
+}
+
+.chap a  {
+    width: 33px;
+    height: 33px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid black;
+    font-size: 15pt;
+    color: black;
+    font-weight: 900;
+    padding: 3px;
+}
+
+.chap .invisible {
+   opacity: 0.0;
+}
+
+.chapter {
+    font-size: 20pt;
 }
 
 .text-container {
